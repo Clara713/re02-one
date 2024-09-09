@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kimi</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    li{
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+    }
+    .clearfix:before,.clearfix:after{
+      content: "";
+      display: table;
+    }
+    .clearfix:after{
+      clear:both;
+    }
+    *{
+      background-color:#F3F5FA;
+    }
+    .logo{
+      display: block;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .input{
+      background-color: white;
+      width: 800px;
+      height: 120px;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.13);
+      box-shadow: 1px 1px 250px  rgba(166, 166, 166, 0.05);
+    }
+    input{
+      padding: 0;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      margin-top : 10px ;
+      margin-left: 10px;
+      width: 800px;
+    }
+    .inter{
+      position: absolute;
+      left: 10px;
+      bottom: 1px;
+      background-color: transparent;
+      height: 29px;
+    }
+    .wenzi{
+      display: inline-block;
+      line-height: 29px;
+      overflow: hidden;
+      background-color: white;
+      font-size: 12px;
+    }
+    .button{
+      background-color: white;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+    .button img{
+      width: 40px;
+      height: 40px;
+    }
+    
+    button{
+     outline: 0px;
+     border: 0px;
+     margin: 0px;
+     text-decoration: none;
+     text-align: center;
+     width: 40px;
+     height: 40px;
+    }
+    .biaoqian{
+      width: 675px;
+      height: 100px;
+      margin: 0 auto;
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .biaoqian1 img{
+      height: 35px;
+    }
+    .biaoqian1 span{
+      display: inline-block;
+      line-height: 35px;
+      overflow: hidden;
+      background-color: white;
+    }
+    .biaoqian1{
+      display: inline-block;
+      background-color: white;
+      margin: 10px 10px;
+      height: 45px;
+      padding: 5px;
+      border-radius: 4px;
+      color: black;
+    }
+   .bian{
+    background-color: #fafbff;
+    width: 70px;
+    height: 430px;
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 1px 1px 250px  rgba(166, 166, 166, 0.05);
+   }
+   .bian img{
+    width: 50px;
+    height: 50px;
+   }
+   #p2,#p3,#p4,#p6{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+   }
+   #p1{
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 30px;
+    border-bottom: #ccc 1px solid;
+    background-color: #fafbff
+   }
+   #p5{
+    height: 70px;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: #ccc 1px solid;
+    background-color: #fafbff
+   }
+   #hoverelement{
+    width: 800px;
+    height: 200px;
+    background-color: white;
+    margin: 0 auto;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    display: none;
+   }
+   #tishi{
+    height: 16px;
+    line-height: 12px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 56%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    display: none;
+   }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <a href="https://kimi.moonshot.cn/chat/%7Ccr1db96gi3pumpottd00?index=0&tu=1" ><img src="./images/kimi.png"  width="336.36px"></a>
+  </div>
+  <div class="input"><input type="text" placeholder="随时@你想要的Kimi+使用各种能力">
+    <div class="inter">
+      <img src="./images/01a7928f7e9b7d14374c87b1c3a649b7.png" ><span class="wenzi">联网搜索</span>
+    </div>
+    <div class="button">
+      <button><img src="./images/db578a47e5a344d2315c946a0df15bcf.png" ></button>
+      <button><img src="./images/f7507f619060f6db6ef4e2440a164904.png"  ></button>
+      <button><img src="./images/ee9acaf7fd683d3b66935158ba87a943.png"  ></button>
+    </div>
+  </div>
+  <!-- 以此按钮为例，其余按钮及侧边栏二维码同理 -->
+    <script>
+      var element_tagname = document.getElementsByTagName("button")[0]
+      console.log(element_tagname)
+      element_tagname.onclick=function(){
+        hoverelement.style.display="block"
+      }
+      element_tagname.onmouseout=function(){
+        hoverelement.style.display="none"
+        tishi.style.display="none"
+      }
+      element_tagname.onmouseover=function(){
+        tishi.style.display="block"
+      }
+    </script>
+  </div>
+  <div class="biaoqian">
+    <a class="biaoqian1" href="https://www.moonshot.cn/back-to-school">
+      <img src="./images/6c0168c4c11913105be3bcb6a791fedd.png">
+      <span>Kimi陪你勇闯新学期</span>
+    </a>
+    <a class="biaoqian1" href="https://kimi.moonshot.cn/chat/%7Ccreieou9e5jqvnlie740?data_source=tracer&data_industry=ocpc_ps_convert&utm_campaign=TR_dq65SwQY&utm_content=&utm_medium=360&utm_source=360_pc_search&utm_term=&index=0&tu=l">
+      <img src="./images/6c0168c4c11913105be3bcb6a791fedd.png">
+      <span>台风摩羯还将影响哪些地区？</span>
+    </a>
+    <a class="biaoqian1" href="https://kimi.moonshot.cn/chat/%7Ccr40o4itnn0lguc7pbn0?data_source=tracer&data_industry=ocpc_ps_convert&utm_campaign=TR_dq65SwQY&utm_content=&utm_medium=360&utm_source=360_pc_search&utm_term=&index=0&tu=l">
+      <img src="./images/6c0168c4c11913105be3bcb6a791fedd.png">
+      <span>一键生成爆款笔记</span>
+    </a>
+    <a class="biaoqian1" href="https://kimi.moonshot.cn/chat/%7Ccr6od4kimln2npuj93pg?data_source=tracer&data_industry=ocpc_ps_convert&utm_campaign=TR_dq65SwQY&utm_content=&utm_medium=360&utm_source=360_pc_search&utm_term=&index=0&tu=l">
+      <img src="./images/6c0168c4c11913105be3bcb6a791fedd.png">
+      <span>制定新学期学习计划</span>
+    </a>
+    <a class="biaoqian1" href="https://kimi.moonshot.cn/chat/%7Ccr40o4itnn0lguc7pbog?data_source=tracer&data_industry=ocpc_ps_convert&utm_campaign=TR_dq65SwQY&utm_content=&utm_medium=360&utm_source=360_pc_search&utm_term=&index=0&tu=l">
+      <img src="./images/6c0168c4c11913105be3bcb6a791fedd.png">
+      <span>百家姓工牌设计师</span>
+    </a>
+  </div>
+  <div id="hoverelement">
+    <img src="./images/f9c3e15fc85fc78e2f9501606f816071.png" width="800px" >
+  </div>
+  <span id="tishi">输入常用语标题，可快捷调用常用语</span>
+  <div class="bian">
+    <img src="./images/a41aa69a01a9a2a19525f0655afb2315.png" id="p1">
+    <img src="./images/9bea7cfe594d2b688ba2597e9f1271fc.png" id="p2">
+    <img src="./images/4b9587548e0954a270d3b56e4abfdea2.png" id="p3">
+    <img src="./images/ea4f4386fc8ff0058a0fe1a81e18b46d.png" id="p4">
+    <img src="./images/c832c0002afdcc8d1bf32d3a31b4f911.png" id="p5">
+    <img src="./images/b6c5f8a70220b583b0e84e1f9c27dfdb.png" id="p6">
+  </div>
+</body>
+</html>
